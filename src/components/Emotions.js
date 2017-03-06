@@ -1,5 +1,6 @@
 var React = require('react')
 var Webcam = require('react-webcam')
+var EmotionsChart = require('./EmotionsChart')
 
 var Emotions = React.createClass({
   capture: function() {
@@ -28,8 +29,8 @@ var Emotions = React.createClass({
                   audio={false} />
           <p><a href="#" className="btn btn-success" onClick={this.capture}>How's it going?</a></p>
         </div>
-        <div className="col-sm-4">
-          {JSON.stringify(this.props.emotionsData)}
+        <div className="col-sm-6">
+          <EmotionsChart emotionsData={this.props.emotionsData} />
         </div>
       </div>
     )
