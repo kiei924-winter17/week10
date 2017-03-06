@@ -26,3 +26,5 @@ var MovieReview = React.createClass({
 })
 
 module.exports = MovieReview
+
+// var translateUrl = "https://watson-api-explorer.mybluemix.net/language-translator/api/v2/translate?source=en&target=es&text=" + this.props.review.summary_short
